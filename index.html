@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1></h1>
-    <script>
-        let nilai = 75;
-
-        if(nilai > 70 ) {
-            console.log("Selamat Anda Lulus");
-        } else {
-            console.log("maaf, anda tidak lulus");
+    <title>Halo Dunia Kita Belajar Javacript</title>
+    <script type="text/javascript">
+        function halo_dunia ()
+        {
+            var halo=document.getElementById("halo_dunia");
+            halo.innerHTML+="<p>Belajar Javasript Bareng Eduwork</p>";
         }
     </script>
+</head>
+<body>
+    <h1>Belajar Javasript</h1>
+    <p>Saya belajar javasript bareng Eduwork (Thinkjubilee.com)</p>
+    <br>
+    <button id="Tekan" onclick="halo_dunia()">Tekan Aku</button>
+    <div id="div_halo_dunia"></div>
 </body>
 </html>
