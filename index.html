@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halo Dunia Kita Belajar Javacript</title>
-    <script type="text/javascript">
-        function halo_dunia ()
-        {
-            var halo=document.getElementById("halo_dunia");
-            halo.innerHTML+="<p>Belajar Javasript Bareng Eduwork</p>";
-        }
-    </script>
+    
 </head>
+
 <body>
-    <h1>Belajar Javasript</h1>
-    <p>Saya belajar javasript bareng Eduwork (Thinkjubilee.com)</p>
-    <br>
-    <button id="Tekan" onclick="halo_dunia()">Tekan Aku</button>
-    <div id="div_halo_dunia"></div>
+
+
+
+    <script type="text/javascript">
+      let nilai = prompt("Masukkan Nilai Anda: "); 
+    
+
+      switch (nilai) {
+        case "60":
+          alert("Nilai Anda D");
+          break;
+        case "70":
+          alert("Nilai Anda C");
+          break;
+        case "80":
+          alert("Nilai Anda B");
+          break;
+        case "90":
+          alert("Nilai Anda A");
+          break;
+        case "100":
+          alert("Nilai Anda A+")
+        default:
+          alert("Maaf Anda Belum Lulus Dan Harus Mengikuti Remedial");
+          break;
+      }
+    </script>
 </body>
+
 </html>
