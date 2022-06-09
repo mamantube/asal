@@ -14,27 +14,43 @@
 
 
     <script type="text/javascript">
-      let nilai = prompt("Masukkan Nilai Anda: "); 
+      let nilai = prompt("Silahkan Masukkan Nilai Anda: "); 
     
 
-      switch (nilai) {
-        case "60":
-          alert("Nilai Anda D");
-          break;
-        case "70":
-          alert("Nilai Anda C");
-          break;
-        case "80":
-          alert("Nilai Anda B");
-          break;
-        case "90":
-          alert("Nilai Anda A");
-          break;
-        case "100":
-          alert("Nilai Anda A+")
-        default:
-          alert("Maaf Anda Belum Lulus Dan Harus Mengikuti Remedial");
-          break;
+      // switch (nilai) {
+      //   case "60":
+      //     alert("Nilai Anda D");
+      //     break;
+      //   case "70":
+      //     alert("Nilai Anda C");
+      //     break;
+      //   case "80":
+      //     alert("Nilai Anda B");
+      //     break;
+      //   case "90":
+      //     alert("Nilai Anda A");
+      //     break;
+      //   case "100":
+      //     alert("Nilai Anda A+")
+      //   default:
+      //     alert("Maaf Anda Belum Lulus Dan Harus Mengikuti Remedial");
+      //     break;
+      // }
+
+      if (nilai < 60) {
+        alert("Maaf Anda Belum Lulus Dan Harus Mengikuti Remedial");
+      } else if ( nilai < 70 ) {
+        alert("Nilai Anda D");
+      } else if (nilai < 80) {
+        alert ("Nilai Anda C");
+      } else if (nilai < 90) {
+        alert ("Nilai Anda B");
+      } else if (nilai < 100) {
+        alert ("Nilai Anda A");
+      } else if (nilai == 100 ) {
+        alert ("Nilai Anda A+");
+      } else {
+        alert ("Maaf Item Yang anda Masukkan Salah");
       }
     </script>
 </body>
